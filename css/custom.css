@@ -1,0 +1,27 @@
+:root {
+  --brand: #c04b91;   /* main brand color */
+  --accent: #f5f59d;  /* mild sandal tone */
+}
+
+/* Brand color replacements */
+.text-primary { color: var(--brand) !important; }
+.bg-primary   { background-color: var(--brand) !important; }
+.btn-primary  { background-color: var(--brand); border-color: var(--brand); }
+
+/* Logo heading */
+.navbar-brand h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--brand);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+footer {
+  background: #101010;
+  color: #eee;
+}
+
+footer a { color: var(--accent); text-decoration: none; }
+
+
+
