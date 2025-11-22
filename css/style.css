@@ -94,6 +94,11 @@ p {
 	}
 }
 
+.header-logo 
+{
+	width: 200px;
+	height: auto;
+}
 .hero-header {
 	margin-top: 0;
 	/* REMOVED negative margin to prevent overlap */
@@ -102,7 +107,7 @@ p {
 	/* Added bottom padding for more height */
 	min-height: 80vh;
 	/* Add minimum height to show more of the image */
-	background: url(../img/hero-bg4.gif) no-repeat center center;
+	/* background: url(../img/hero-bg4.gif) no-repeat center center; */
 	background-size: cover;
 	/* Cover entire hero section */
 	background-color: #f8f8f8;
