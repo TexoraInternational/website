@@ -1,3 +1,10 @@
+/* Rounded Corner Theme - Applied Throughout */
+* {
+	--border-radius-sm: 6px;
+	--border-radius-md: 10px;
+	--border-radius-lg: 15px;
+}
+
 p {
 	font-size: 16px;
 	line-height: 26px;
@@ -31,27 +38,42 @@ p {
 	position: fixed;
 	display: none;
 	right: 45px;
-	bottom: 45px;
+	bottom: 110px;
 	z-index: 99
 }
 
+/* Mobile responsive styles for floating icons */
+@media (max-width: 768px) {
+	.back-to-top {
+		right: 15px;
+		bottom: 85px;
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+	}
+}
+
 .btn {
-	transition: .5s
+	transition: .5s;
+	border-radius: var(--border-radius-md);
 }
 
 .btn-square {
 	width: 38px;
-	height: 38px
+	height: 38px;
+	border-radius: var(--border-radius-sm);
 }
 
 .btn-sm-square {
 	width: 32px;
-	height: 32px
+	height: 32px;
+	border-radius: var(--border-radius-sm);
 }
 
 .btn-lg-square {
 	width: 48px;
-	height: 48px
+	height: 48px;
+	border-radius: var(--border-radius-sm);
 }
 
 .btn-lg-square,
@@ -66,13 +88,14 @@ p {
 
 .sticky-top {
 	top: -150px;
-	transition: .5s
+	transition: .5s;
+	background-color: transparent;
 }
 
 .navbar {
-	padding: 10px 0;
+	padding: 15px 0;
 	font-family: "Space Grotesk", sans-serif;
-	font-size: 18px
+	font-size: 18px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -94,24 +117,74 @@ p {
 	}
 }
 
+.favicon-logo {
+	width: 35px;
+	height: 35px;
+	object-fit: contain;
+}
+
+.brand-text {
+	line-height: 1.2;
+	text-align: left;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.brand-line1 {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--bs-dark);
+	letter-spacing: 0px;
+}
+
+.brand-line2 {
+	font-size: 10px;
+	font-weight: 700;
+	color: var(--bs-dark);
+	letter-spacing: 0.5px;
+}
+
 .header-logo 
 {
-	width: 200px;
+	width: 120px;
 	height: auto;
 }
 .hero-header {
 	margin-top: 0;
-	/* REMOVED negative margin to prevent overlap */
-	padding-top: 20px;
-	padding-bottom: 60px;
-	/* Added bottom padding for more height */
-	min-height: 80vh;
-	/* Add minimum height to show more of the image */
-	/* background: url(../img/hero-bg4.gif) no-repeat center center; */
+	padding: 0;
+	background-color: #e8e8e8;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-image: url('../img/banner-background.jpg');
 	background-size: cover;
-	/* Cover entire hero section */
-	background-color: #f8f8f8;
-	/* Add background color as fallback */
+	background-position: center left;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	z-index: 0;
+}
+
+.hero-header::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgba(232, 232, 232, 0.3) 0%, rgba(232, 232, 232, 0.75) 35%, rgba(232, 232, 232, 1) 50%);
+	z-index: 0;
+}
+
+.hero-header .row {
+	position: relative;
+	z-index: 1;
 }
 
 .header-carousel {
@@ -132,7 +205,8 @@ p {
 
 .about-img {
 	position: relative;
-	overflow: hidden
+	overflow: hidden;
+	border-radius: var(--border-radius-lg);
 }
 
 .about-img::after {
@@ -146,8 +220,15 @@ p {
 	background-size: contain
 }
 
+.project-item {
+	position: relative;
+	overflow: hidden;
+	border-radius: var(--border-radius-lg);
+}
+
 .project-item img {
-	transition: .5s
+	transition: .5s;
+	border-radius: var(--border-radius-lg);
 }
 
 .project-item:hover img {
@@ -172,7 +253,8 @@ p {
 .service-item {
 	position: relative;
 	padding: 30px 25px;
-	transition: .5s
+	transition: .5s;
+	border-radius: var(--border-radius-md);
 }
 
 .service-item.bg-primary:hover {
@@ -321,7 +403,7 @@ p {
 	color: var(--bs-primary);
 	display: inline-block;
 	padding: 5px 12px;
-	border-radius: 7px;
+	border-radius: var(--border-radius-md);
 	font-weight: 600;
 	font-size: 0.75rem;
 	margin-bottom: 10px;
@@ -339,6 +421,7 @@ p {
 	color: white;
 	background-color: var(--brand) !important;
 	font-size: 18px;
+	border-radius: var(--border-radius-md);
 }
 
 .howitworks__v1 .arch-line {
@@ -368,6 +451,7 @@ p {
 	color: var(--bs-white);
 	overflow: hidden;
 	position: relative;
+	border-radius: var(--border-radius-lg);
 }
 
 .stats__v3 .content h3 {
@@ -400,4 +484,140 @@ p {
 .stats__v3 .content .rounded-borders .rounded-border-2 {
 	right: 40px;
 	top: 40px;
+}
+/* Floating WhatsApp Button */
+.whatsapp-float {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	background-color: #25D366;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	z-index: 1000;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+.whatsapp-float:hover {
+	background-color: #128C7E;
+	color: #fff;
+	transform: scale(1.1);
+	box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float i {
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0%, 100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+}
+
+/* Mobile responsive styles for WhatsApp button */
+@media (max-width: 768px) {
+	.whatsapp-float {
+		width: 45px;
+		height: 45px;
+		bottom: 20px;
+		right: 15px;
+		font-size: 22px;
+	}
+	
+	/* Hero banner mobile adjustments */
+	.hero-header::before {
+		display: none; /* Hide background image on mobile */
+	}
+	
+	.hero-header {
+		min-height: auto;
+		padding: 40px 0;
+	}
+	
+	.hero-header .container {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+}
+
+/* Additional Rounded Corner Elements */
+.form-control {
+	border-radius: var(--border-radius-md);
+}
+
+.form-control:focus {
+	border-radius: var(--border-radius-md);
+}
+
+/* Banner text box with border */
+.hero-header h5 {
+	border-radius: var(--border-radius-md) !important;
+}
+
+/* Feature boxes in banner */
+.hero-header .btn-square {
+	border-radius: var(--border-radius-md) !important;
+}
+
+/* Video containers */
+video {
+	border-radius: var(--border-radius-lg) !important;
+}
+
+.aspect-ratio\:\ 4\/5\; {
+	border-radius: var(--border-radius-lg);
+}
+
+.aspect-ratio\:\ 4\/5\; video {
+	border-radius: var(--border-radius-lg);
+}
+
+/* Product section background boxes */
+.project-item {
+	border-radius: var(--border-radius-lg) !important;
+	overflow: hidden;
+}
+
+.project-item img {
+	border-radius: var(--border-radius-lg) !important;
+}
+
+/* Product section left background */
+.d-flex.flex-column.justify-content-center.bg-primary {
+	border-radius: var(--border-radius-lg);
+}
+
+.testimonial-img {
+	border-radius: var(--border-radius-lg);
+}
+
+.accordion-button {
+	border-radius: var(--border-radius-md);
+}
+
+.accordion-button:not(.collapsed) {
+	border-radius: var(--border-radius-md);
+}
+
+.accordion-body {
+	border-radius: var(--border-radius-md);
+}
+
+img {
+	border-radius: var(--border-radius-md);
+}
+
+.card {
+	border-radius: var(--border-radius-lg);
 }
