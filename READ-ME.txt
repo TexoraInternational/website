@@ -1,9 +1,310 @@
-  =>  Template Name    : iSTUDIO - Interior Design Website Template Free
+================================================================================
+TEXORA INTERNATIONAL - PREMIUM SCRUNCHIES MANUFACTURER WEBSITE
+================================================================================
 
-  =>  Template Link    : https://htmlcodex.com/interior-design-website-template-free
+PROJECT INFORMATION
+===================
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+Project Name: Texora International B2B Website
+Version: 1.0 (Production Ready)
+Last Updated: November 23, 2025
+Website Type: B2B E-Commerce/Corporate Website
 
-  =>  Template Author  : HTML Codex
+BUSINESS OVERVIEW
+=================
 
-  =>  Author Website   : https://htmlcodex.com
+Company: Texora International
+Products: Premium handcrafted satin scrunchies and hair accessories
+Target Market: Wholesalers, boutiques, fashion brands, and retailers globally
+Location: Tirupur, Tamil Nadu, India
+
+CONTACT INFORMATION
+===================
+
+Email: info@texorainternational.com
+Phone: +91 82484 84100
+WhatsApp: https://wa.me/918248484100
+Instagram: https://www.instagram.com/ilex_store
+
+PROJECT STRUCTURE
+=================
+
+Root Directory:
+  ├── index.html              - Main landing page
+  ├── css/                    - Stylesheet directory
+  │   ├── bootstrap.min.css   - Bootstrap 5 framework
+  │   ├── style.css           - Main custom styles
+  │   └── custom.css          - Additional customizations
+  ├── js/                     - JavaScript files
+  │   └── main.js             - Main functionality script
+  ├── img/                    - Image assets
+  ├── video/                  - Video files
+  ├── lib/                    - Third-party libraries
+  │   ├── animate/            - Animate.css
+  │   ├── owlcarousel/        - Owl Carousel
+  │   ├── wow/                - WOW.js animations
+  │   ├── easing/             - jQuery easing
+  │   └── waypoints/          - Waypoints scroll
+  └── scss/                   - Bootstrap SCSS source
+
+KEY FOLDERS EXPLAINED
+====================
+
+/img/ - Image Assets
+  - banner-background.jpg: Hero banner background (CSS-referenced)
+  - banner_right.png: Product image in hero banner
+  - product-1.jpg to product-6.jpg: Product gallery images
+  - service-1.png to service-4.png: Service section icons
+  - testimonial-1.jpg to testimonial-3.jpg: Customer testimonial photos
+  - TEXORA FAVICON.png: Brand logo
+  - favicon.ico: Website favicon
+
+/video/ - Video Assets
+  - about-1.mp4: About section video 1
+  - about-2.mp4: About section video 2
+
+/lib/ - External Libraries
+  - Used for animations, carousels, and enhanced functionality
+  - All libraries are minified for performance
+
+PAGE SECTIONS
+=============
+
+1. HEADER & NAVIGATION
+   - Sticky navbar with Texora logo and menu
+   - Links: Home, About, Services, Products, Features, Testimonials, Contact
+
+2. HERO BANNER
+   - Eye-catching banner with CTA buttons
+   - "Request Price Quote" and "View Products" buttons
+   - Feature boxes: Handcrafted with Care, Eco-Friendly Fabrics
+   - Background image with gradient overlay
+
+3. ABOUT SECTION
+   - Company introduction video
+   - Expertise highlights with icons
+   - Custom sizing, fabric colors, brand tagging options
+
+4. WHY CHOOSE US
+   - 5 key competitive advantages
+   - Premium Satin Fabrics
+   - Consistent Quality
+   - Bulk & Custom Orders
+   - On-Time Delivery
+   - Trusted by Wholesalers & Boutiques
+
+5. KEY BENEFITS
+   - Statistics counters
+   - Customer Satisfaction
+   - Revenue Increase
+   - Business Growth
+
+6. PRODUCT RANGE
+   - 6 product showcase cards
+   - Product categories: Velvet Elegance, Satin Dreams, Cotton Comfort, etc.
+   - Hover effects and product overlays
+
+7. GLOBAL SUPPLY NETWORK
+   - Services description
+   - Company capabilities and reach
+
+8. FAQ SECTION
+   - Accordion with 5 common questions
+   - MOQ, Customization, Production Time, Shipping, International availability
+
+9. TESTIMONIALS
+   - Owl Carousel slider
+   - 3 customer testimonials with rotating display
+   - Customer quotes and satisfaction feedback
+
+10. NEWSLETTER SUBSCRIPTION
+    - Email capture form
+    - Footer integration
+
+11. FOOTER
+    - Company information
+    - Contact details
+    - Social media links
+    - Quick links
+    - Copyright information
+
+DESIGN SPECIFICATIONS
+====================
+
+Color Scheme:
+  - Primary Color: Teal (#0D6B68)
+  - Secondary Color: Sandal (#f5f59d)
+  - Background Colors: White, Light Grey (#e8e8e8)
+  - Text Colors: Dark Grey, White
+
+Typography:
+  - Navbar/Headings: Space Grotesk
+  - Special Sections: Outfit
+  - Body Text: Poppins
+  - Default Font Size: 16px (body), 18px (navbar)
+
+Rounded Corners Theme:
+  - Small (6px): Buttons, icon boxes
+  - Medium (10px): Form inputs, cards, service items
+  - Large (15px): Images, videos, major containers
+
+TECHNOLOGIES USED
+=================
+
+Frontend:
+  - HTML5: Structure and semantic markup
+  - CSS3: Styling with custom variables
+  - Bootstrap 5.0: Responsive grid and components
+  - JavaScript: Interactivity and scroll effects
+
+Libraries & Frameworks:
+  - jQuery 3.6.1: DOM manipulation
+  - WOW.js: Scroll animations
+  - Animate.css: CSS animations
+  - Owl Carousel 2: Image carousel
+  - Font Awesome 5.10.0: Icons
+  - Bootstrap Icons 1.4.1: Additional icons
+  - Google Fonts: Typography
+
+IMAGE MANAGEMENT
+================
+
+How to Update Images:
+
+1. Replace Banner Background:
+   - Replace file: img/banner-background.jpg
+   - CSS automatically references this file
+   - Used in hero section background
+
+2. Update Product Images:
+   - Replace product-1.jpg through product-6.jpg
+   - Same naming convention required
+   - Located in img/ folder
+
+3. Update Service Icons:
+   - Replace service-1.png through service-4.png
+   - Keep PNG format for transparency
+
+4. Update Testimonial Photos:
+   - Replace testimonial-1.jpg through testimonial-3.jpg
+   - Square format recommended for carousel
+
+Image Naming Convention:
+  - Use lowercase with hyphens: banner-background.jpg
+  - Avoid underscores or misspellings
+  - Keep consistent naming for easy management
+
+CONTENT UPDATES
+===============
+
+How to Update Website Content:
+
+1. Product Information:
+   - Edit index.html, line ~514-570
+   - Modify product titles and descriptions in .project-item sections
+
+2. Service Details:
+   - Edit index.html, line ~590-650
+   - Update service descriptions in .service-item sections
+
+3. FAQ Content:
+   - Edit index.html, line ~750-820
+   - Modify accordion items in #faqAccordion
+
+4. Testimonials:
+   - Edit index.html, line ~680-730
+   - Update customer quotes and names in .testimonial-item sections
+
+5. Contact Information:
+   - Search for: +91 82484 84100 (6 instances)
+   - Search for: info@texorainternational.com (1 instance)
+   - Update all instances for consistency
+
+6. Social Links:
+   - Edit footer section for social media URLs
+   - Update Instagram, Facebook, LinkedIn links
+
+RESPONSIVE DESIGN
+=================
+
+Breakpoints:
+  - Mobile: < 768px
+  - Tablet: 768px - 991.98px
+  - Desktop: > 991.98px
+
+Mobile Features:
+  - Hero banner hides background image on mobile
+  - CTA buttons stack vertically
+  - Navigation menu collapses to hamburger
+  - Floating WhatsApp button resized to 45px
+  - Back-to-top button positioned for mobile
+
+Features:
+  - Touch-friendly button sizes
+  - Optimized font sizes for readability
+  - Full-width layouts on mobile
+  - Smooth scrolling between sections
+
+DEPLOYMENT CHECKLIST
+====================
+
+Before Going Live:
+
+[ ] All images are in img/ folder with correct filenames
+[ ] All video files are in video/ folder
+[ ] Contact information is current (email, phone, WhatsApp)
+[ ] All external links are working (social media, email)
+[ ] Banner background image displays correctly
+[ ] Responsive design tested on mobile devices
+[ ] Newsletter form is connected (if applicable)
+[ ] WhatsApp button opens correct chat link
+[ ] No console errors in browser dev tools
+[ ] All sections have appropriate content
+[ ] Testimonials and FAQ are updated
+[ ] Footer copyright year is current
+
+MAINTENANCE NOTES
+=================
+
+Regular Updates:
+  - Update testimonials quarterly with new customer feedback
+  - Refresh product images with new designs
+  - Monitor and respond to newsletter submissions
+  - Update statistics/metrics in Key Benefits section
+  - Keep social media links current
+
+Performance:
+  - All CSS and JS files are minified
+  - Images use lazy loading
+  - External libraries loaded from CDN
+  - Video files are optimized for web
+
+Browser Compatibility:
+  - Chrome, Firefox, Safari, Edge (latest versions)
+  - Mobile browsers (iOS Safari, Chrome Mobile)
+  - IE11 not supported (Bootstrap 5 requirement)
+
+FILE SPECIFICATIONS
+===================
+
+CSS Variables Used:
+  --border-radius-sm: 6px
+  --border-radius-md: 10px
+  --border-radius-lg: 15px
+
+Key CSS Classes:
+  .hero-header: Main banner container
+  .project-item: Product gallery cards
+  .service-item: Service feature boxes
+  .whatsapp-float: Floating contact button
+  .testimonial-carousel: Testimonials slider
+
+CREATED & MAINTAINED BY
+=======================
+
+Project: Texora International Website
+Development: Custom Built
+Last Update: November 23, 2025
+Status: Production Ready
+
+================================================================================
