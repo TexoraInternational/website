@@ -93,9 +93,18 @@ p {
 }
 
 .navbar {
-	padding: 15px 0;
+	padding: 12px 0;
 	font-family: "Space Grotesk", sans-serif;
 	font-size: 18px;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-right: 30px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -115,12 +124,43 @@ p {
 		margin-left: 0;
 		padding: 10px 0
 	}
+	
+	/* Mobile navbar adjustments */
+	.navbar {
+		padding: 8px 0;
+		flex-wrap: nowrap;
+	}
+	
+	.navbar-brand {
+		margin-right: 0;
+		flex-shrink: 0;
+	}
+	
+	.texora-full-logo {
+		height: 35px;
+		max-width: 150px;
+		flex-shrink: 0;
+	}
+	
+	.navbar-toggler {
+		flex-shrink: 0;
+		order: 2;
+	}
 }
 
 .favicon-logo {
 	width: 35px;
 	height: 35px;
 	object-fit: contain;
+}
+
+/* New Texora Full Logo */
+.texora-full-logo {
+	height: 45px;
+	width: auto;
+	max-width: 280px;
+	object-fit: contain;
+	display: block;
 }
 
 .brand-text {
